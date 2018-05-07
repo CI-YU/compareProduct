@@ -1,0 +1,16 @@
+.logo {
+    padding: 10px;
+    margin-right: 10x;
+    font-size: 35px;
+    font-family: fantasy;
+}
+
+.color-price {
+    color: blueviolet;
+}
+.color-name {
+    color: coral;
+}
+.container-fluid {
+    background: #f0f0f0;
+}

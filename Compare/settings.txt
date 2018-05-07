@@ -1,0 +1,17 @@
+./config/database.js
+    >>'url': 'mongodb://127.0.0.1:27017/((database name))'
+
+./client/js/angular/app.js、controllers.js、directives.js
+    >>angular.module改名稱
+./client/index.html
+    >>ng-app改名稱
+
+npm install -g bower nodemon forever pm2
+
+下載mongo>>安裝>>到C槽建資料夾/data/db
+
+執行：
+進入mongo\bin資料夾>>shift+右鍵>>開啟命令提示字元>>mongod.exe
+
+進專案資料夾>>shift+右鍵>>開啟命令提示視窗>>nodemon app
+

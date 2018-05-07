@@ -1,0 +1,63 @@
+<div class="container-fluid" ng-controller="CompareCtrl">
+    <div id="headerWrapper">
+        <span class="logo pull-left">{{test.title}}</span>
+    </div>
+
+    <form role="form">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search here..." ng-model="searchStr">
+
+        </div>
+    </form>
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary" ng-click="getCpuLists()">Cpu</button>
+                <button type="button" class="btn btn-primary" ng-click="getGoodLists()">Case</button>
+            </div>
+        </div>
+        <!--<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 form-inline">
+            <select name="sort" id="select1" class="form-control">
+               <option>排序方式</option>
+               <optgroup label="依價錢">
+                   <option value="sort-price:desc" ng-click="functionSort()">由高到低</option>
+                   <option value="sort-price:asc" ng-click="">由低到高</option>
+               </optgroup>
+           </select>
+        </div>-->
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <h1><a href="http://www.pcking.tw/evaluate.php">京樺科技</a></h1>
+            <hr>
+            <table>
+                <tr class="title">
+                    <th>Name</th>
+                    <th ng-click="pckingPrice;de=!de">Price</th>
+                </tr>
+                <tr ng-repeat="list in lists | orderBy: pckingPrice:de | filter:searchStr">
+                    <td class="color-name">{{list.pcking.Name}}</td>
+                    <td class="color-price">{{list.pcking.Price}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <h1><a href="http://coolpc.com.tw/evaluate.php">原價屋</a></h1>
+            <hr>
+            <table>
+                <tr class="title">
+                    <th>Name</th>
+                    <th ng-click="coolpcPrice;desc=!desc">Price</th>
+                </tr>
+                <tr ng-repeat="list in lists | orderBy: coolpcPrice:desc | filter:searchStr">
+                    <td class="color-name">{{list.coolpc.Name}}</td>
+                    <td class="color-price">{{list.coolpc.Price}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <hr>
+
+    <p><a ui-sref="main">home</a>.</p>
+</div>
