@@ -6,11 +6,14 @@
 }
 
 .color-price {
-    color: blueviolet;
+    color: #77DDFF;
 }
 .color-name {
-    color: coral;
+    color: #DDAA00;
 }
-.container-fluid {
-    background: #f0f0f0;
+.document {
+    background: #444444;
+}
+.form-control{
+    style:"text-align:center";
 }

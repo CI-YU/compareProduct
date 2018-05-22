@@ -28,7 +28,7 @@
             $scope.coolpcPrice = 'coolpc.Price';
             $scope.pckingPrice = 'pcking.Price';
             $scope.test = [];
-            $scope.test.title = "CompareTest";
+            $scope.test.title = "Compare";
             $scope.getCpuLists = function () {
                 $http.get('/cpu').success(function (data) {
                     $scope.lists = data;
