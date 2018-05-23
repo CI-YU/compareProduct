@@ -1,6 +1,6 @@
 <div class="document container-fluid" ng-controller="CompareCtrl">
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div>
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#the-menu">
                 <span class="icon-bar"></span>
@@ -15,6 +15,7 @@
                     <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;My Cart</a></li>
                     <li><a href="/#/login"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Sign In</a></li>
                 </ul>
                 <form class="navbar-form navbar-right visible-md-inline visible-lg-inline">
@@ -26,14 +27,6 @@
             </div>
         </div>
     </nav>
-    <!--<form class="form-horizontal">
-        <div class="form-group ">
-            <label for="yourSearch" class="col-lg-3 control-label">{{test.title}}</label>
-            <div class="col-lg-9">
-                <input type="text" class="form-control" placeholder="Search here..." ng-model="searchStr">
-            </div>
-        </div>
-    </form>-->
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="btn-group">
@@ -41,15 +34,6 @@
                 <button type="button" class="btn btn-primary" ng-click="getGoodLists()">Case</button>
             </div>
         </div>
-        <!--<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 form-inline">
-            <select name="sort" id="select1" class="form-control">
-               <option>排序方式</option>
-               <optgroup label="依價錢">
-                   <option value="sort-price:desc" ng-click="functionSort()">由高到低</option>
-                   <option value="sort-price:asc" ng-click="">由低到高</option>
-               </optgroup>
-           </select>
-        </div>-->
     </div>
     <div class="row">
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
@@ -81,8 +65,5 @@
             </table>
         </div>
     </div>
-
     <hr>
-
-    <p><a ui-sref="main">home</a>.</p>
 </div>
