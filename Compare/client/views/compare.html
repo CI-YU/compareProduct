@@ -16,7 +16,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;My Cart</a></li>
-                    <li><a href="/#/login"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Sign In</a></li>
+                    <li><a href="/#/login"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Log In</a></li>
                 </ul>
                 <form class="navbar-form navbar-right visible-md-inline visible-lg-inline">
                     <div class="form-group" style="margin-top: 4px">
@@ -26,7 +26,7 @@
                 </form>
             </div>
         </div>
-    </nav>
+    </nav><!-- 上半部為標籤列-->
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="btn-group">
@@ -34,36 +34,36 @@
                 <button type="button" class="btn btn-primary" ng-click="getGoodLists()">Case</button>
             </div>
         </div>
-    </div>
+    </div><!-- 上面為CPU CASE按鈕-->
     <div class="row">
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <h1><a href="http://www.pcking.tw/evaluate.php">京樺科技</a></h1>
+            <h1><a href="http://www.pcking.tw/evaluate.php" style="color:white;"><span style="font-family:Microsoft JhengHei;" }>京樺科技</span></a></h1>
             <hr>
             <table>
                 <tr class="title">
-                    <th>Name</th>
-                    <th ng-click="pckingPrice;de=!de">Price</th>
+                    <th style="color:white;"><h3>Name</h3></th>
+                    <th style="color:white;" ng-click="pckingPrice;de=!de"><h3>Price</h3></th>
                 </tr>
                 <tr ng-repeat="list in lists | orderBy: pckingPrice:de | filter:searchStr">
-                    <td class="color-name">{{list.pcking.Name}}</td>
-                    <td class="color-price">{{list.pcking.Price}}</td>
+                    <td class="color-name"><h3>{{list.pcking.Name}}</h3></td>
+                    <td class="color-price"><h3>{{list.pcking.Price}}</h3></td>
                 </tr>
             </table>
         </div>
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <h1><a href="http://coolpc.com.tw/evaluate.php">原價屋</a></h1>
+            <h1><a href="http://coolpc.com.tw/evaluate.php" style="color:white;"><span style="font-family:Microsoft JhengHei;" }>原價屋</span></a></h1>
             <hr>
             <table>
                 <tr class="title">
-                    <th>Name</th>
-                    <th ng-click="coolpcPrice;desc=!desc">Price</th>
+                    <th style="color:white;"><h3>Name</h3></th>
+                    <th style="color:white;" ng-click="coolpcPrice;desc=!desc"><h3>Price</h3></th>
                 </tr>
                 <tr ng-repeat="list in lists | orderBy: coolpcPrice:desc | filter:searchStr">
-                    <td class="color-name">{{list.coolpc.Name}}</td>
-                    <td class="color-price">{{list.coolpc.Price}}</td>
+                    <td class="color-name"><h3>{{list.coolpc.Name}}</h3></td>
+                    <td class="color-price"><h3>{{list.coolpc.Price}}</h3></td>
                 </tr>
             </table>
         </div>
-    </div>
+    </div><!-- 上面為資料放置的位置-->
     <hr>
 </div>
