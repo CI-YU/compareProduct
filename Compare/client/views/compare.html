@@ -1,14 +1,41 @@
-<div class="document" ng-controller="CompareCtrl">
-    <div id="headerWrapper" class="col-lg-4">
-        <span class="logo pull-left ">{{test.title}}</span>
-    </div>
-    <form role="form">
-        <div class="form-group ">
-            <input type="text" class="form-control" placeholder="Search here..." ng-model="searchStr">
+<div class="document container-fluid" ng-controller="CompareCtrl">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#the-menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a href="/index.html" class="navbar-brand brand">HomePage</a>
+            </div>
+            <div class="collapse navbar-collapse" id="the-menu">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/#/login"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Sign In</a></li>
+                </ul>
+                <form class="navbar-form navbar-right visible-md-inline visible-lg-inline">
+                    <div class="form-group" style="margin-top: 4px">
+                        <label for="search" class="sr-only">Search</label>
+                        <input type="text" class="form-control" placeholder="Search here..." ng-model="searchStr">
+                    </div>
+                </form>
+            </div>
         </div>
-    </form>
+    </nav>
+    <!--<form class="form-horizontal">
+        <div class="form-group ">
+            <label for="yourSearch" class="col-lg-3 control-label">{{test.title}}</label>
+            <div class="col-lg-9">
+                <input type="text" class="form-control" placeholder="Search here..." ng-model="searchStr">
+            </div>
+        </div>
+    </form>-->
     <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="btn-group">
                 <button type="button" class="btn btn-primary" ng-click="getCpuLists()">Cpu</button>
                 <button type="button" class="btn btn-primary" ng-click="getGoodLists()">Case</button>
