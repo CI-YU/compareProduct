@@ -8,6 +8,8 @@
 
         .controller('LoginCtrl', ['$scope', '$http', function ($scope, $http) {}])
 
+        .controller('PixnetCtrl', ['$scope', '$http', function ($scope, $http) {}])
+
         .controller('SignUpCtrl', ['$scope', '$http', '$state', function ($scope, $http, $state) {
             $scope.signup = function () {
                 $http.post('/signup', $scope.newUser).then(function (response) {
@@ -40,7 +42,7 @@
                 });
             };
             ///$scope.testA = function () {
-             //   alert('123');
+            //   alert('123');
             //}
     }])
 
