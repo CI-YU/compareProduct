@@ -8,7 +8,13 @@
 
         .controller('LoginCtrl', ['$scope', '$http', function ($scope, $http) {}])
 
-        .controller('PixnetCtrl', ['$scope', '$http', function ($scope, $http) {}])
+        .controller('PixnetCtrl', ['$scope', '$http', function ($scope, $http) {
+            $scope.getPixnetPhoto = function () {
+                $http.get('/photos').success(function (data) {
+                    $scope.lists = data;
+                });
+            };
+        }])
 
         .controller('SignUpCtrl', ['$scope', '$http', '$state', function ($scope, $http, $state) {
             $scope.signup = function () {

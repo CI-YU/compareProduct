@@ -28,4 +28,11 @@ module.exports = function (router, passport) {
             secret: 'NO'
         });
     });
+
+    router.get('/photos', function (req, res) {
+        pixnet.album.getAlbumSetElements(function(res){console.log(res);}, 5111907, s045488);
+    });
+
+    //pixnet.album.getAlbumSetElements(function (res) {console.log(res);}, setId, userName)
+    //pixnet.album.getAlbumSetElements(function(){...}, 5111907, s045488)
 }

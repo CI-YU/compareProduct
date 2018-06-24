@@ -53,6 +53,16 @@ require('./app/routes/api/ram.js')(api);
 require('./app/routes/api/hdd.js')(api);
 require('./app/routes/api/power.js')(api);
 require('./app/routes/api/good.js')(api);
+require('./app/routes/api/dist/pixnet.js')(api);
+require('./app/routes/api/dist/pixnet.album.js')(api);
+require('./app/routes/api/dist/pixnet.block.js')(api);
+require('./app/routes/api/dist/pixnet.blog.js')(api);
+require('./app/routes/api/dist/pixnet.friend.js')(api);
+require('./app/routes/api/dist/pixnet.guestbook.js')(api);
+require('./app/routes/api/dist/pixnet.index.js')(api);
+require('./app/routes/api/dist/pixnet.mainpage.js')(api);
+require('./app/routes/api/dist/pixnet.users.js')(api);
+
 app.use('/api', api);
 
 var router = express.Router();
