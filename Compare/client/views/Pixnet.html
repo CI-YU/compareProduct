@@ -1,4 +1,7 @@
-<div class="container">
-    <h1>test</h1>
-    <div>{{lists}}</div>
+<div class="container" ng-init="getPixnetPhotos()">
+    <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3" ng-repeat="photo in pixnetPhotos" style="padding: 0 0 3px;">
+            <img ng-src="https://pic.pimg.tw/tysh310246/{{photo.identifier}}_b.jpg" alt="" class="img-responsive">
+        </div>
+    </div>
 </div>
