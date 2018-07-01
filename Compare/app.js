@@ -53,6 +53,8 @@ require('./app/routes/api/ram.js')(api);
 require('./app/routes/api/hdd.js')(api);
 require('./app/routes/api/power.js')(api);
 require('./app/routes/api/good.js')(api);
+
+
 app.use('/api', api);
 
 var router = express.Router();

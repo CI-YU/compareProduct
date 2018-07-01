@@ -71,6 +71,11 @@
                         url: '/compare',
                         templateUrl: 'views/compare.html',
                         controller:'CompareCtrl'
+                    })
+                    .state('pixnet', {
+                        url: '/pixnet',
+                        templateUrl: 'views/pixnet.html',
+                        controller:'PixnetCtrl'
                     });
 
                 $urlRouterProvider.otherwise('/');

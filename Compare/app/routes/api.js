@@ -28,4 +28,5 @@ module.exports = function (router, passport) {
             secret: 'NO'
         });
     });
+
 }
